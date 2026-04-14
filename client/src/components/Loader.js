@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-/**
- * Loader Component
- * Full-screen loading animation with "Aero Ocean X" branding
- * Auto-dismisses after 2 seconds with fade-out transition
- */
 const Loader = ({ onComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    // Start fade out after 1.5s
+    // Start fade out 
     const fadeTimer = setTimeout(() => setFadeOut(true), 1500);
-    // Fully remove after 2s
+    // Fully remove 
     const removeTimer = setTimeout(() => {
       setHidden(true);
       if (onComplete) onComplete();

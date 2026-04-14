@@ -3,11 +3,6 @@ import { motion } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { RiStarFill } from 'react-icons/ri';
 
-/**
- * Testimonials Component
- * Auto-sliding carousel with dot navigation + prev/next arrows
- * 7 testimonial cards with star ratings and glassmorphism design
- */
 const testimonials = [
   {
     quote: "Aero Ocean X has been a game-changer for our exports to the UAE. Their focus on trust and timing is unmatched in the industry.",
@@ -209,7 +204,7 @@ const Testimonials = () => {
         </motion.div>
       </div>
 
-      {/* Responsive arrow positioning */}
+      {/* Responsive*/}
       <style>{`
         @media (max-width: 868px) {
           .carousel-arrow {

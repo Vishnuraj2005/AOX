@@ -3,11 +3,6 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiChevronDown } from 'react-icons/fi';
 import StarBackground from './StarBackground';
 
-/**
- * Hero Component
- * Full-screen hero with star canvas background, floating orbs,
- * typing effect, CTA buttons, and scroll-down indicator
- */
 const words = ['Fast.', 'Secure.', 'Reliable.', 'Global.'];
 
 const Hero = () => {

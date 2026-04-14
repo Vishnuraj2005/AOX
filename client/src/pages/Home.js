@@ -10,11 +10,6 @@ import GlobalRoutes from '../components/GlobalRoutes';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-/**
- * Home Page
- * Composes all section components in order
- * Receives theme and toggleTheme props for Navbar
- */
 const Home = ({ theme, toggleTheme }) => {
   return (
     <>

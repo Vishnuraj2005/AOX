@@ -85,7 +85,7 @@ img {
   height: auto;
 }
 
-/* Remove default button styles */
+
 button {
   cursor: pointer;
   border: none;
@@ -108,9 +108,7 @@ button {
   background: var(--secondary);
 }
 
-/* ======================
-   Section Styles
-   ====================== */
+/* Section Styles*/
 .section {
   position: relative;
   padding: 100px 0;
@@ -151,9 +149,7 @@ button {
   padding: 0 24px;
 }
 
-/* ======================
-   Glassmorphism Card
-   ====================== */
+
 .glass-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -174,9 +170,7 @@ button {
   transform: translateY(-4px);
 }
 
-/* ======================
-   Glowing Border Effect
-   ====================== */
+
 .glow-border {
   position: relative;
 }
@@ -205,9 +199,7 @@ button {
   opacity: 1;
 }
 
-/* ======================
-   Buttons
-   ====================== */
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -268,9 +260,7 @@ button {
   transform: scale(1.05);
 }
 
-/* ======================
-   Pill Tags / Badges
-   ====================== */
+
 .pill-tag {
   display: inline-block;
   padding: 6px 16px;
@@ -300,9 +290,7 @@ button {
   box-shadow: 0 0 15px rgba(var(--secondary-rgb), 0.2);
 }
 
-/* ======================
-   Floating Orbs
-   ====================== */
+
 .floating-orb {
   position: absolute;
   border-radius: 50%;
@@ -319,11 +307,8 @@ button {
   background: rgba(var(--secondary-rgb), 0.15);
 }
 
-/* ======================
-   Keyframe Animations
-   ====================== */
+/* Keyframe Animations */
 
-/* Float animation for orbs */
 @keyframes float {
   0%, 100% { transform: translateY(0) translateX(0); }
   25% { transform: translateY(-20px) translateX(10px); }
@@ -365,7 +350,7 @@ button {
   animation: blink-cursor 0.8s step-end infinite;
 }
 
-/* Glow pulse */
+
 @keyframes glow-pulse {
   0%, 100% { box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.2); }
   50% { box-shadow: 0 0 40px rgba(var(--primary-rgb), 0.4), 0 0 60px rgba(var(--secondary-rgb), 0.2); }
@@ -375,7 +360,7 @@ button {
   animation: glow-pulse 3s ease-in-out infinite;
 }
 
-/* Marquee */
+
 @keyframes marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -389,7 +374,7 @@ button {
   animation-play-state: paused;
 }
 
-/* Pulse dot */
+
 @keyframes pulse-dot {
   0%, 100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(2); opacity: 0.3; }
@@ -399,7 +384,7 @@ button {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* Spin loader */
+
 @keyframes spin-loader {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -417,15 +402,13 @@ button {
   }
 }
 
-/* Star twinkle */
+
 @keyframes twinkle {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 1; }
 }
 
-/* ======================
-   Scroll Progress Bar
-   ====================== */
+
 .scroll-progress {
   position: fixed;
   top: 0;
@@ -437,9 +420,7 @@ button {
   box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
 }
 
-/* ======================
-   Custom Cursor Glow
-   ====================== */
+
 .cursor-glow {
   position: fixed;
   width: 300px;
@@ -466,9 +447,6 @@ button {
   );
 }
 
-/* ======================
-   Loader
-   ====================== */
 .loader-overlay {
   position: fixed;
   inset: 0;
@@ -507,9 +485,6 @@ button {
   letter-spacing: 2px;
 }
 
-/* ======================
-   Back to Top Button
-   ====================== */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -542,9 +517,7 @@ button {
   box-shadow: 0 0 30px rgba(var(--primary-rgb), 0.5);
 }
 
-/* ======================
-   Navbar
-   ====================== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -626,9 +599,6 @@ button {
   background: rgba(248, 250, 252, 0.98);
 }
 
-/* ======================
-   3D Tilt Card
-   ====================== */
 .tilt-card {
   perspective: 1000px;
 }
@@ -638,9 +608,6 @@ button {
   transition: transform 0.1s ease;
 }
 
-/* ======================
-   WhatsApp Button
-   ====================== */
 .whatsapp-btn {
   display: inline-flex;
   align-items: center;
@@ -660,9 +627,6 @@ button {
   box-shadow: 0 0 30px rgba(37, 211, 102, 0.4), 0 0 60px rgba(37, 211, 102, 0.15);
 }
 
-/* ======================
-   Contact Form
-   ====================== */
 .form-input {
   width: 100%;
   padding: 14px 20px;
@@ -686,9 +650,6 @@ button {
   color: var(--text-muted);
 }
 
-/* ======================
-   Testimonial Carousel
-   ====================== */
 .carousel-dot {
   width: 10px;
   height: 10px;
@@ -726,9 +687,6 @@ button {
   color: var(--primary);
 }
 
-/* ======================
-   World Map
-   ====================== */
 .world-map-container {
   position: relative;
   max-width: 800px;
@@ -753,9 +711,7 @@ button {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* ======================
-   Responsive
-   ====================== */
+/*Responsive*/
 @media (max-width: 1024px) {
   .section {
     padding: 80px 0;
@@ -796,9 +752,7 @@ button {
   }
 }
 
-/* ======================
-   Theme Toggle Button
-   ====================== */
+/*Theme Toggle Button */
 .theme-toggle {
   width: 40px;
   height: 40px;
@@ -821,9 +775,7 @@ button {
   transform: rotate(30deg);
 }
 
-/* ======================
-   Star Rating
-   ====================== */
+/*Star Rating */
 .star-rating {
   color: var(--accent);
   font-size: 0.9rem;
@@ -831,9 +783,7 @@ button {
   gap: 2px;
 }
 
-/* ======================
-   Divider Line
-   ====================== */
+/* Divider Line */
 .glow-divider {
   height: 1px;
   background: linear-gradient(

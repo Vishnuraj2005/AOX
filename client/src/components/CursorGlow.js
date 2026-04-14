@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-/**
- * CursorGlow Component
- * Glowing radial gradient circle that follows mouse cursor
- * Hidden on touch/mobile devices
- */
 const CursorGlow = () => {
   const [position, setPosition] = useState({ x: -500, y: -500 });
   const [isTouchDevice, setIsTouchDevice] = useState(false);

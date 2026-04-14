@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { FiArrowUp } from 'react-icons/fi';
 
-/**
- * BackToTop Component
- * Floating button that appears after scrolling 400px
- * Smooth-scrolls to top on click
- */
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
 

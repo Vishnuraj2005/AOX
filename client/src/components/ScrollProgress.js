@@ -1,10 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-/**
- * ScrollProgress Component
- * Thin glowing gradient bar at the top of the viewport
- * Shows scroll percentage across the page
- */
 const ScrollProgress = () => {
   const [scrollWidth, setScrollWidth] = useState(0);
 

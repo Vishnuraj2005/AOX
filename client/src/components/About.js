@@ -68,11 +68,6 @@ const AboutStatCounter = ({ stat, index, isVisible }) => {
   );
 };
 
-/**
- * About Component
- * Company description with 3 glassmorphism stat cards
- * Fade-in + slide-up animations on scroll
- */
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);

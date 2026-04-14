@@ -1,16 +1,10 @@
 import React, { useRef, useEffect, useCallback } from 'react';
 
-/**
- * StarBackground Component
- * Canvas-based twinkling stars animation
- * Props: starCount (default 150), opacity (default 1)
- */
 const StarBackground = ({ starCount = 150, opacity = 1 }) => {
   const canvasRef = useRef(null);
   const starsRef = useRef([]);
   const animationRef = useRef(null);
 
-  // Initialize stars
   const initStars = useCallback((width, height) => {
     const stars = [];
     for (let i = 0; i < starCount; i++) {
@@ -29,7 +23,7 @@ const StarBackground = ({ starCount = 150, opacity = 1 }) => {
   const starColorRef = useRef('255, 255, 255');
 
   useEffect(() => {
-    // Read the current star color from CSS
+   
     const updateColor = () => {
       const color = getComputedStyle(document.documentElement)
         .getPropertyValue('--star-color')
@@ -39,12 +33,11 @@ const StarBackground = ({ starCount = 150, opacity = 1 }) => {
       }
     };
     
-    // Initial fetch
+    //fetch
     updateColor();
-    // After a short delay to ensure CSS has loaded/applied
+
     setTimeout(updateColor, 100);
 
-    // Watch for theme changes on the html element
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (mutation.attributeName === 'data-theme') {
@@ -69,7 +62,7 @@ const StarBackground = ({ starCount = 150, opacity = 1 }) => {
     ctx.clearRect(0, 0, width, height);
 
     starsRef.current.forEach((star) => {
-      // Update alpha for twinkle
+      
       star.alpha += star.alphaSpeed * star.alphaDirection;
       if (star.alpha >= 1) {
         star.alpha = 1;
@@ -79,7 +72,7 @@ const StarBackground = ({ starCount = 150, opacity = 1 }) => {
         star.alphaDirection = 1;
       }
 
-      // Draw star
+    
       ctx.beginPath();
       ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(${starColorRef.current}, ${star.alpha * opacity})`;

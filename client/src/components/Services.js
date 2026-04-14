@@ -8,11 +8,6 @@ import {
   RiShieldCheckLine,
 } from 'react-icons/ri';
 
-/**
- * Services Component
- * 4 service cards with 3D tilt hover effect, glowing borders,
- * and icons. Includes "Explore All Services" CTA.
- */
 const services = [
   {
     icon: RiPlaneLine,
@@ -44,7 +39,7 @@ const services = [
   },
 ];
 
-/** 3D Tilt Card Wrapper */
+
 const TiltCard = ({ children }) => {
   const cardRef = useRef(null);
 
@@ -216,7 +211,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA Link */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

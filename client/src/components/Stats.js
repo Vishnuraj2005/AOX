@@ -2,13 +2,9 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import StarBackground from './StarBackground';
 
-/**
- * Stats Component
- * Count-up animated counters with IntersectionObserver,
- * dark section with radial gradient and subtle stars
- */
 
-/** Custom hook for count-up animation */
+
+/* count-up animation */
 const useCountUp = (target, duration = 2000, shouldStart = false) => {
   const [count, setCount] = useState(0);
 

@@ -5,33 +5,26 @@ import CursorGlow from './components/CursorGlow';
 import ScrollProgress from './components/ScrollProgress';
 import BackToTop from './components/BackToTop';
 
-/**
- * App Component — Root of the application
- * Manages theme state (dark/light) with localStorage persistence
- * Renders global utility components: Loader, CursorGlow, ScrollProgress, BackToTop
- */
+
 function App() {
-  // Theme state — default to dark, persist in localStorage
+  // Theme state
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('aox-theme');
     return saved || 'dark';
   });
 
-  // Loading state — show loader on first load
+  // Loading state
   const [loading, setLoading] = useState(true);
 
-  // Apply theme to document
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('aox-theme', theme);
   }, [theme]);
 
-  // Toggle theme between dark and light
   const toggleTheme = useCallback(() => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   }, []);
 
-  // Loader complete callback
   const handleLoaderComplete = useCallback(() => {
     setLoading(false);
   }, []);

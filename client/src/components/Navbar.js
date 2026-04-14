@@ -3,11 +3,6 @@ import { FiMenu, FiX, FiPhone, FiSun, FiMoon } from 'react-icons/fi';
 import logoDark from '../images/Aero Ocean X logo.png';
 import logoLight from '../images/Aero Ocean X logo-02.png';
 
-/**
- * Navbar Component
- * Sticky navigation with blur backdrop, dark/light toggle,
- * mobile hamburger drawer, and animated link underlines
- */
 const Navbar = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -84,7 +79,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             {theme === 'dark' ? <FiSun /> : <FiMoon />}
           </button>
 
-          {/* Call Now CTA - Desktop */}
+          {/* Call Now */}
           <a
             href="tel:8220992053"
             className="btn-primary desktop-only"
@@ -94,7 +89,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             CALL NOW
           </a>
 
-          {/* Hamburger - Mobile */}
+          {/* btn Mobile */}
           <button
             className="theme-toggle mobile-only"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -105,7 +100,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         </div>
       </div>
 
-      {/* Mobile Menu Drawer */}
+      {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {navLinks.map((link) => (

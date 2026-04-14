@@ -7,11 +7,7 @@ import {
   RiFileTextLine,
 } from 'react-icons/ri';
 
-/**
- * Specialties Component
- * 2x2 grid of glassmorphism cards with icons, titles,
- * and glowing pill tag chips for each specialty area
- */
+
 const specialties = [
   {
     icon: RiPlaneLine,
