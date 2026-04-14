@@ -49,7 +49,7 @@ const Contact = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://aox.onrender.com/api/contact', formData);
       if (response.status === 201) {
         setSubmitted(true);
         setTimeout(() => setSubmitted(false), 3000);
