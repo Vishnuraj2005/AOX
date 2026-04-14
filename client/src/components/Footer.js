@@ -234,7 +234,7 @@ const Footer = ({ theme }) => {
             color: 'var(--text-muted)',
             fontSize: '0.82rem',
           }}>
-            Designed with love for global trade by the AOX Team.
+            Designed for global trade by the AOX Team.
           </p>
         </div>
       </div>
