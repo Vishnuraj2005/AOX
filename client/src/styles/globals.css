@@ -1,17 +1,4 @@
-/* ============================================
-   AERO OCEAN X — Global Design System
-   Futuristic / Aerospace / Premium SaaS Theme
-   ============================================ */
 
-/* Tailwind v4 @import removed — CRA react-scripts 5.0.1 doesn't support
-   @tailwindcss/postcss plugin without ejecting. All styling is handled
-   by our comprehensive custom CSS design system below. */
-
-/* ---- Google Fonts imported via index.html ---- */
-
-/* ======================
-   CSS Custom Properties
-   ====================== */
 :root {
   /* Dark Theme (Default) */
   --bg-primary: #050a18;
